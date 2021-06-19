@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "510273311456",
+    "project_id": "chamados-e54c0",
+    "storage_bucket": "chamados-e54c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510273311456:android:4f8367ecf8c2c58c01b685",
+        "android_client_info": {
+          "package_name": "com.example.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510273311456-9u6dtf5t5mdqt9mpj1nap5ssh676ufi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7-zllVDIOko29F1DMjK1NLrcQzTBxdQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510273311456-9u6dtf5t5mdqt9mpj1nap5ssh676ufi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

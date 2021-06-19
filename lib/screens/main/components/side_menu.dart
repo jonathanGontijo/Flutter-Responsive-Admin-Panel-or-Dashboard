@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,6 +16,12 @@ class SideMenu extends StatelessWidget {
           children: [
             DrawerHeader(
               child: Image.asset("assets/images/logo.png"),
+             /* Text (
+                  'Chamados' ,
+                style: TextStyle(fontSize: 30),
+                textAlign: TextAlign.start
+              ),
+              Image.asset("assets/images/logo.png"),*/
             ),
             DrawerListTile(
               title: "Dashbord",
@@ -22,37 +29,27 @@ class SideMenu extends StatelessWidget {
               press: () {},
             ),
             DrawerListTile(
-              title: "Transaction",
-              svgSrc: "assets/icons/menu_tran.svg",
-              press: () {},
-            ),
-            DrawerListTile(
-              title: "Task",
-              svgSrc: "assets/icons/menu_task.svg",
-              press: () {},
-            ),
-            DrawerListTile(
-              title: "Documents",
+              title: "Documentos",
               svgSrc: "assets/icons/menu_doc.svg",
               press: () {},
             ),
             DrawerListTile(
-              title: "Store",
+              title: "Informação",
               svgSrc: "assets/icons/menu_store.svg",
               press: () {},
             ),
             DrawerListTile(
-              title: "Notification",
+              title: "Telefones",
               svgSrc: "assets/icons/menu_notification.svg",
               press: () {},
             ),
             DrawerListTile(
-              title: "Profile",
+              title: "Email",
               svgSrc: "assets/icons/menu_profile.svg",
               press: () {},
             ),
             DrawerListTile(
-              title: "Settings",
+              title: "Ajuda",
               svgSrc: "assets/icons/menu_setting.svg",
               press: () {},
             ),

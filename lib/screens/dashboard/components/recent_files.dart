@@ -1,3 +1,4 @@
+import 'package:admin/data/dummy_cadastro.dart';
 import 'package:admin/models/RecentFile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -11,33 +12,38 @@ class RecentFiles extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    const Chamados = {...DUMMY_CADASTRO};
+
     return Container(
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
         color: secondaryColor,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+
+     /*child: ListView.builder(
+        itemCount: Chamados.length,
+        itemBuilder: (context, i) => Text(Chamados.values.elementAt(i).nome),
         children: [
           Text(
-            "Recent Files",
+            "Arquivos recentes",
             style: Theme.of(context).textTheme.subtitle1,
           ),
-          SizedBox(
+          /*SizedBox(
             width: double.infinity,
-            child: DataTable(
+              child: DataTable(
               horizontalMargin: 0,
               columnSpacing: defaultPadding,
               columns: [
                 DataColumn(
-                  label: Text("File Name"),
+                  label: Text("Nome"),
                 ),
                 DataColumn(
-                  label: Text("Date"),
+                  label: Text("Data"),
                 ),
                 DataColumn(
-                  label: Text("Size"),
+                  label: Text("Status"),
                 ),
               ],
               rows: List.generate(
@@ -45,14 +51,14 @@ class RecentFiles extends StatelessWidget {
                 (index) => recentFileDataRow(demoRecentFiles[index]),
               ),
             ),
-          ),
+          ),*/
         ],
-      ),
+      ),*/
     );
   }
 }
 
-DataRow recentFileDataRow(RecentFile fileInfo) {
+/*DataRow recentFileDataRow(RecentFile fileInfo) {
   return DataRow(
     cells: [
       DataCell(
@@ -74,4 +80,4 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
       DataCell(Text(fileInfo.size)),
     ],
   );
-}
+}*/

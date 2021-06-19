@@ -1,9 +1,15 @@
 import 'package:admin/models/MyFiles.dart';
+import 'package:admin/provider/chamados_provider.dart';
 import 'package:admin/responsive.dart';
+import 'package:admin/routes/app_routes.dart';
+import 'package:admin/screens/dashboard/components/chamados_formulario.dart';
 import 'package:flutter/material.dart';
-
+import 'package:provider/provider.dart';
+import 'package:admin/screens/dashboard/components/chamados.dart';
 import '../../../constants.dart';
 import 'file_info_card.dart';
+
+
 
 class MyFiels extends StatelessWidget {
   const MyFiels({
@@ -12,6 +18,9 @@ class MyFiels extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final ChamadosProviders Chamados = Provider.of(context);
+
     final Size _size = MediaQuery.of(context).size;
     return Column(
       children: [
@@ -19,7 +28,7 @@ class MyFiels extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "My Files",
+              "Meus Arquivos",
               style: Theme.of(context).textTheme.subtitle1,
             ),
             ElevatedButton.icon(
@@ -30,9 +39,13 @@ class MyFiels extends StatelessWidget {
                       defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(
+                  AppRoutes.USER_FORM
+                );
+              },
               icon: Icon(Icons.add),
-              label: Text("Add New"),
+              label: Text("Novo Chamado"),
             ),
           ],
         ),
